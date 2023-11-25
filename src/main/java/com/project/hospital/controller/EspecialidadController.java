@@ -119,7 +119,7 @@ public class EspecialidadController {
 			final OutputStream outStream = response.getOutputStream();
 			JasperExportManager.exportReportToPdfStream(jasperPrint, outStream);
 		} catch (Exception e) {
-
+			System.out.println("Error: " + e.getMessage());
 		}
 	}
 }
