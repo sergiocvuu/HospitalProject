@@ -99,7 +99,7 @@ public class EspecialidadController {
 	public String listEspecialidades(HttpServletRequest request) {
 		request.setAttribute("especialidades", service.list());
 		return "admin/especialidad/list";
-	}
+	} 
 	
 	@RequestMapping(value = "especialidades/pdf", method = RequestMethod.GET)
 	@ResponseBody
